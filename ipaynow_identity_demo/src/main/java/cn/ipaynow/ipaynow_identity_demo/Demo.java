@@ -146,8 +146,8 @@ public class Demo {
 //        md5=c4MlX9GJCi0YI5z3RvpK17wPlscFKpY1
 //        des=dYTAwfNMEeT3pk5FB8MS5MYk
 
-        Map map5 = identitySdk.MobileNoAuthQuery("l5fj8JtEp0eS7yL5fgiX");
-        System.out.println(FormDateReportConvertor.postFormLinkReport(map5));
+//        Map map5 = identitySdk.MobileNoAuthQuery("l5fj8JtEp0eS7yL5fgiX");
+//        System.out.println(FormDateReportConvertor.postFormLinkReport(map5));
 
 //        appId=1476788813528909
 //        funcode=ID03_Query
