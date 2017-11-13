@@ -14,23 +14,136 @@ public class Demo {
 
     public static void main(String [] args){
 
+
+
+//        appId=1441071499740581
+//        des=abnMX6YXHjBdesCsn2TD8b25
+//        md5=DK96gnOB7EmVDDaHgLTLEZqVgP0H0nML
+
 //        Map map = identitySdk.IdentityAuthQuery("Num12011525");
 //        System.out.println(FormDateReportConvertor.postFormLinkReport(map));
-//
+
+//        appId=1441071499740581
+//        funcode=ID01_Query
+//        responseTime=20171113175042
+//        responseCode=0000
+//        responseMsg=success
+//        status=00
+//        transStatus=00
+//        mhtOrderNo=Num12011525
+
+
+
+
+
+
+
+
+
+//        appId=1441071499740581
+//        des=abnMX6YXHjBdesCsn2TD8b25
+//        md5=DK96gnOB7EmVDDaHgLTLEZqVgP0H0nML
+
 //        Map map1 = identitySdk.IdentityAuth("张江南","110101198204031532",null);
 //        System.out.println(FormDateReportConvertor.postFormLinkReport(map1));
 
-//        Map map2 = identitySdk.CardAuth("大王","230128199207080925","6226200105111414","13264172356",null);
+//        funcode=ID01
+//        mhtOrderNo=r5GnRFY2sKrRS3JhzkJD
+//        nowpayTransId=1113175401rN2pXP5RcXWun4SK
+//        responseCode=0000
+//        responseMsg=success
+//        responseTime=20171113175401
+//        status=00
+
+
+
+
+
+
+
+
+
+
+
+//        appId=1441071499740581
+//        des=Z5CbXbEaJA6CYRSDS5Ddsab6
+//        md5=DK96gnOB7EmVDDaHgLTLEZqVgP0H0nML
+
+//        Map map2 = identitySdk.CardAuth("大王","230128199207080925","6226200105111414",null);
 //        System.out.println(FormDateReportConvertor.postFormLinkReport(map2));
 
-//        Map map3 = identitySdk.CardAuthQuery("X3w89qe0BuwbgkmsWf3d");
+//        funcode=ID02
+//        mhtOrderNo=OQOI8UEkmqwaoRfktT8q
+//        nowpayTransId=20171113180325xEHmb0rvpwigeseO
+//        requestId=20171113180325xEHmb0rvpwigeseO
+//        responseCode=0000
+//        responseMsg=success
+//        responseTime=20171113180325
+//        status=00
+
+
+
+
+
+
+
+
+
+
+
+//        appId=1441071499740581
+//        des=Z5CbXbEaJA6CYRSDS5Ddsab6
+//        md5=DK96gnOB7EmVDDaHgLTLEZqVgP0H0nML
+
+//        Map map3 = identitySdk.CardAuthQuery("OQOI8UEkmqwaoRfktT8q");
 //        System.out.println(FormDateReportConvertor.postFormLinkReport(map3));
 
-//        Map map4 = identitySdk.MobileNoAuth("大王","230128199207080569","13264177123",null);
-//        System.out.println(FormDateReportConvertor.postFormLinkReport(map4));
+//        appId=1441071499740581
+//        funcode=ID02_Query
+//        mhtOrderNo=OQOI8UEkmqwaoRfktT8q
+//        responseCode=0000
+//        responseMsg=success
+//        responseTime=20171113180544
+//        status=00
+//        transStatus=00
 
-        Map map5 = identitySdk.MobileNoAuthQuery("Num11111606");
-        System.out.println(FormDateReportConvertor.postFormLinkReport(map5));
+
+
+
+
+
+
+
+
+
+
+
+//        appId=1476788813528909
+//        md5=c4MlX9GJCi0YI5z3RvpK17wPlscFKpY1
+//        des=dYTAwfNMEeT3pk5FB8MS5MYk
+//        Map map4 = identitySdk.MobileNoAuth("张江南","110101198204031532","13401190417",null);
+//        System.out.println(FormDateReportConvertor.postFormLinkReport(map4));
+//        funcode=ID03
+//        mhtOrderNo=l5fj8JtEp0eS7yL5fgiX
+//        nowpayTransId=11130610342ndhS9G8os3Kz1sA
+//        requestId=11130610342ndhS9G8os3Kz1sA
+//        responseCode=0000
+//        responseMsg=success
+//        responseTime=20171113181034
+//        status=00
+//        Map map5 = identitySdk.MobileNoAuthQuery("l5fj8JtEp0eS7yL5fgiX");
+//        System.out.println(FormDateReportConvertor.postFormLinkReport(map5));
+//        appId=1476788813528909
+//        funcode=ID03_Query
+//        mhtOrderNo=l5fj8JtEp0eS7yL5fgiX
+//        responseCode=0000
+//        responseMsg=success
+//        responseTime=20171113181219
+//        status=00
+//        transStatus=00
+
+
+
 
     }
 

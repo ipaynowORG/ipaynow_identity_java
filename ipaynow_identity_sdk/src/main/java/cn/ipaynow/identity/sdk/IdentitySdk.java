@@ -116,14 +116,18 @@ public class IdentitySdk {
 
 
 
-    public Map IdentityAuthQuery(String mhtOrderNo){
-        Map<String,String> requestMap = new HashMap<String, String>();
-        requestMap.put("mhtOrderNo", mhtOrderNo);
-        return query(requestMap,"ID01_Query");
-    }
 
 
 
+
+
+    /**
+     * 身份验证
+     * @param cardName  姓名
+     * @param idcard    身份证
+     * @param mhtOrderNo    商户订单号(可空,为空时自动生成)
+     * @return
+     */
     public Map IdentityAuth(String cardName,String idcard,String mhtOrderNo){
         Map<String,String> requestMap = new HashMap<String, String>();
         requestMap.put("cardName",cardName);
@@ -135,17 +139,38 @@ public class IdentitySdk {
         }
         return query(requestMap,"ID01");
     }
+    /**
+     * 身份验证-订单查询
+     * @param mhtOrderNo    商户订单号
+     * @return
+     */
+    public Map IdentityAuthQuery(String mhtOrderNo){
+        Map<String,String> requestMap = new HashMap<String, String>();
+        requestMap.put("mhtOrderNo", mhtOrderNo);
+        return query(requestMap,"ID01_Query");
+    }
 
 
 
-    public Map CardAuth(String idCardName,String idCard,String bankCardNum,String mobile,String mhtOrderNo){
+
+
+
+
+
+
+    /**
+     *  卡信息认证
+     * @param idCardName   姓名
+     * @param idCard    身份证
+     * @param bankCardNum   银行账户
+     * @param mhtOrderNo    商户订单号(可空,为空时自动生成)
+     * @return
+     */
+    public Map CardAuth(String idCardName,String idCard,String bankCardNum,String mhtOrderNo){
         Map<String,String> requestMap = new HashMap<String, String>();
         requestMap.put("idCardName",idCardName);
         requestMap.put("idCard",idCard);
         requestMap.put("bankCardNum",bankCardNum);
-        if(StringUtils.isNotEmpty(mobile)){
-            requestMap.put("mobile",mobile);
-        }
         if(StringUtils.isEmpty(mhtOrderNo)){
             requestMap.put("mhtOrderNo", RandomUtil.getRandomStr(20));
         }else{
@@ -154,8 +179,11 @@ public class IdentitySdk {
         return query(requestMap,"ID02");
     }
 
-
-
+    /**
+     * 卡信息认证- 订单查询
+     * @param mhtOrderNo
+     * @return
+     */
     public Map CardAuthQuery(String mhtOrderNo){
         Map<String,String> requestMap = new HashMap<String, String>();
         requestMap.put("mhtOrderNo",mhtOrderNo);
@@ -164,6 +192,32 @@ public class IdentitySdk {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /**
+     * 手机号认证
+     * @param idCardName    认证姓名
+     * @param idCard    身份证号码
+     * @param mobile    手机号
+     * @param mhtOrderNo    商户订单号
+     * @return
+     */
     public Map MobileNoAuth(String idCardName,String idCard,String mobile,String mhtOrderNo){
         Map<String,String> requestMap = new HashMap<String, String>();
         requestMap.put("idCardName",idCardName);
@@ -178,6 +232,11 @@ public class IdentitySdk {
     }
 
 
+    /**
+     * 手机号认证 - 订单查询
+     * @param mhtOrderNo
+     * @return
+     */
     public Map MobileNoAuthQuery(String mhtOrderNo){
         Map<String,String> requestMap = new HashMap<String, String>();
         requestMap.put("mhtOrderNo",mhtOrderNo);
