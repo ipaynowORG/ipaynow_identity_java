@@ -84,7 +84,7 @@ Maven坐标如下
 <tr>
 <tr>
             <td>nowpayTransId</td>
-            <td>xxxx</td>
+            <td>现在支付流水号</td>
          </tr>
 <tr>
             <td>responseTime</td>
@@ -187,6 +187,55 @@ Maven坐标如下
          * @return
          */
         public Map CardAuth(String idCardName,String idCard,String bankCardNum,String mhtOrderNo)
+
+- 返回map中的值的含义
+
+<table>
+        <tr>
+            <th>名称</th>
+            <th>说明</th>
+        </tr>
+<tr>
+            <td>funcode</td>
+            <td>同输入</td>
+         </tr>
+<tr>
+            <td>responseTime</td>
+            <td>yyyyMMddHHmmss</td>
+         </tr>
+<tr>
+            <td>responseCode</td>
+            <td>0000 成功
+                0001 参数信息有误
+                0002 获取商户信息失败
+                0003 获取商户费率失败
+                0004 获取商户可用条数失败
+                0005 商户资金不足
+                0006 验证异常
+                0007 商户订单号重复
+            </td>
+         </tr>
+<tr>
+            <td>nowpayTransId</td>
+            <td>现在支付流水号</td>
+         </tr>
+<tr>
+            <td>requestId</td>
+            <td>现在支付流水号</td>
+         </tr>
+<tr>
+            <td>status</td>
+            <td>00匹配,01不匹配,02未知,03调用错误</td>
+         </tr>
+<tr>
+            <td>transStatus</td>
+            <td>00成功  01失败</td>
+         </tr>
+<tr>
+            <td>mhtOrderNo</td>
+            <td>同输入或SDK自动生成的订单号</td>
+         </tr>
+    </table>
 
 
 <h4 id='2.4'> 2.4 卡信息认证-订单查询</h4>
