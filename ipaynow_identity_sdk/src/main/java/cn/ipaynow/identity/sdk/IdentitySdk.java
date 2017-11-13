@@ -75,6 +75,7 @@ public class IdentitySdk {
                 String return2 = res.split("\\|")[1];
                 //错误原因
                 System.out.println(EncryDecryUtils.base64Decrypt(return2));
+                return null;
             }
             //7. 返回解析
             String return1 = res.split("\\|")[0];
@@ -133,5 +134,53 @@ public class IdentitySdk {
             requestMap.put("mhtOrderNo",mhtOrderNo);
         }
         return query(requestMap,"ID01");
+    }
+
+
+
+    public Map CardAuth(String idCardName,String idCard,String bankCardNum,String mobile,String mhtOrderNo){
+        Map<String,String> requestMap = new HashMap<String, String>();
+        requestMap.put("idCardName",idCardName);
+        requestMap.put("idCard",idCard);
+        requestMap.put("bankCardNum",bankCardNum);
+        if(StringUtils.isNotEmpty(mobile)){
+            requestMap.put("mobile",mobile);
+        }
+        if(StringUtils.isEmpty(mhtOrderNo)){
+            requestMap.put("mhtOrderNo", RandomUtil.getRandomStr(20));
+        }else{
+            requestMap.put("mhtOrderNo",mhtOrderNo);
+        }
+        return query(requestMap,"ID02");
+    }
+
+
+
+    public Map CardAuthQuery(String mhtOrderNo){
+        Map<String,String> requestMap = new HashMap<String, String>();
+        requestMap.put("mhtOrderNo",mhtOrderNo);
+        return query(requestMap,"ID02_Query");
+    }
+
+
+
+    public Map MobileNoAuth(String idCardName,String idCard,String mobile,String mhtOrderNo){
+        Map<String,String> requestMap = new HashMap<String, String>();
+        requestMap.put("idCardName",idCardName);
+        requestMap.put("idCard",idCard);
+        requestMap.put("mobile",mobile);
+        if(StringUtils.isEmpty(mhtOrderNo)){
+            requestMap.put("mhtOrderNo", RandomUtil.getRandomStr(20));
+        }else{
+            requestMap.put("mhtOrderNo",mhtOrderNo);
+        }
+        return query(requestMap,"ID03");
+    }
+
+
+    public Map MobileNoAuthQuery(String mhtOrderNo){
+        Map<String,String> requestMap = new HashMap<String, String>();
+        requestMap.put("mhtOrderNo",mhtOrderNo);
+        return query(requestMap,"ID03_Query");
     }
 }
