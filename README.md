@@ -450,13 +450,6 @@ des=xxxxxxxx
 <h2 id='4'> 4. DEMO </h2>
 
 ```
-    private static SmsSdk smsSdk = new SmsSdk();
-    public static void main(String [] args){
-        //发送行业短信
-        System.out.println(smsSdk.send_hy("13401234567","内容"null,"https://www.xxx.com"));
-
-        //查询发送结果
-        System.out.println(smsSdk.query("1234567890987654321","13401234567"));
-
-}
+        //身份验证-订单查询
+        Map map = identitySdk.IdentityAuthQuery("Num12011525");
 ```
