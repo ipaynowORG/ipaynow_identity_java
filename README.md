@@ -385,6 +385,55 @@ Maven坐标如下
          */
         public Map MobileNoAuthQuery(String mhtOrderNo)
 
+
+
+- 返回map中的值的含义
+
+<table>
+        <tr>
+            <th>名称</th>
+            <th>说明</th>
+        </tr>
+<tr>
+            <td>appId</td>
+            <td>同输入</td>
+         </tr>
+<tr>
+            <td>funcode</td>
+            <td>同输入</td>
+         </tr>
+<tr>
+            <td>responseTime</td>
+            <td>yyyyMMddHHmmss</td>
+         </tr>
+<tr>
+            <td>responseCode</td>
+            <td>0000 成功
+                0001 参数信息错误
+                0002 订单不存在
+            </td>
+         </tr>
+<tr>
+            <td>responseMsg</td>
+            <td>应答信息</td>
+         </tr>
+<tr>
+            <td>status</td>
+            <td>00匹配,01不匹配,02状态未知 03调用错误</td>
+         </tr>
+<tr>
+            <td>transStatus</td>
+            <td>00成功,01失败</td>
+         </tr>
+<tr>
+            <td>mhtOrderNo</td>
+            <td>同输入或SDK自动生成的订单号</td>
+         </tr>
+    </table>
+
+
+
+
 <h2 id='3'> 3. 配置文件 </h2>
 
 classpath下创建名为ipaynow-identity-sdk.properties的配置文件,内容如下
