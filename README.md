@@ -70,6 +70,24 @@ Maven坐标如下
          */
         public Map IdentityAuth(String cardName,String idcard,String mhtOrderNo)
 
+- 返回map中的值的含义
+
+<table>
+        <tr>
+            <th>名称</th>
+            <th>说明</th>
+        </tr>
+<tr>
+            <td>推送状态</td>
+            <td>tradeStatus</td>
+         </tr>
+<tr>
+            <td>推送状态</td>
+            <td>tradeStatus</td>
+         </tr>
+    </table>
+
+
 
 <h4 id='2.2'> 2.2 身份验证-订单查询</h4>
 
