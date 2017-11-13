@@ -121,8 +121,10 @@ public class Demo {
 //        appId=1476788813528909
 //        md5=c4MlX9GJCi0YI5z3RvpK17wPlscFKpY1
 //        des=dYTAwfNMEeT3pk5FB8MS5MYk
+
 //        Map map4 = identitySdk.MobileNoAuth("张江南","110101198204031532","13401190417",null);
 //        System.out.println(FormDateReportConvertor.postFormLinkReport(map4));
+
 //        funcode=ID03
 //        mhtOrderNo=l5fj8JtEp0eS7yL5fgiX
 //        nowpayTransId=11130610342ndhS9G8os3Kz1sA
@@ -131,8 +133,22 @@ public class Demo {
 //        responseMsg=success
 //        responseTime=20171113181034
 //        status=00
-//        Map map5 = identitySdk.MobileNoAuthQuery("l5fj8JtEp0eS7yL5fgiX");
-//        System.out.println(FormDateReportConvertor.postFormLinkReport(map5));
+
+
+
+
+
+
+
+
+
+//        appId=1476788813528909
+//        md5=c4MlX9GJCi0YI5z3RvpK17wPlscFKpY1
+//        des=dYTAwfNMEeT3pk5FB8MS5MYk
+
+        Map map5 = identitySdk.MobileNoAuthQuery("l5fj8JtEp0eS7yL5fgiX");
+        System.out.println(FormDateReportConvertor.postFormLinkReport(map5));
+
 //        appId=1476788813528909
 //        funcode=ID03_Query
 //        mhtOrderNo=l5fj8JtEp0eS7yL5fgiX
