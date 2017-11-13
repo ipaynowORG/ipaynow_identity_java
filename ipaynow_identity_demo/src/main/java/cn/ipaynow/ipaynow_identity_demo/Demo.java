@@ -23,14 +23,14 @@ public class Demo {
 //        Map map = identitySdk.IdentityAuthQuery("Num12011525");
 //        System.out.println(FormDateReportConvertor.postFormLinkReport(map));
 
-//        appId=1441071499740581
-//        funcode=ID01_Query
-//        responseTime=20171113175042
+//        appId=1441071499740581    同输入
+//        funcode=ID01_Query    同输入
+//        responseTime=20171113175042   yyyyMMddHHmmss
 //        responseCode=0000
-//        responseMsg=success
-//        status=00
-//        transStatus=00
-//        mhtOrderNo=Num12011525
+//        responseMsg=success   应答信息
+//        status=00     00匹配,01不匹配,02未知,03调用错误
+//        transStatus=00   00成功  01失败
+//        mhtOrderNo=Num12011525    同输入或SDK自动生成的订单号
 
 
 

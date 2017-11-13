@@ -78,12 +78,36 @@ Maven坐标如下
             <th>说明</th>
         </tr>
 <tr>
-            <td>推送状态</td>
-            <td>tradeStatus</td>
+            <td>appId</td>
+            <td>同输入</td>
          </tr>
 <tr>
-            <td>推送状态</td>
-            <td>tradeStatus</td>
+            <td>funcode</td>
+            <td>同输入</td>
+         </tr>
+<tr>
+            <td>responseTime</td>
+            <td>yyyyMMddHHmmss</td>
+         </tr>
+<tr>
+            <td>responseCode</td>
+            <td>0000</td>
+         </tr>
+<tr>
+            <td>responseMsg</td>
+            <td>应答信息</td>
+         </tr>
+<tr>
+            <td>status</td>
+            <td>00匹配,01不匹配,02未知,03调用错误</td>
+         </tr>
+<tr>
+            <td>transStatus</td>
+            <td>00成功  01失败</td>
+         </tr>
+<tr>
+            <td>mhtOrderNo</td>
+            <td>同输入或SDK自动生成的订单号</td>
          </tr>
     </table>
 
