@@ -78,6 +78,63 @@ Maven坐标如下
             <th>说明</th>
         </tr>
 <tr>
+            <td>funcode</td>
+            <td>同输入</td>
+         </tr>
+<tr>
+<tr>
+            <td>nowpayTransId</td>
+            <td>xxxx</td>
+         </tr>
+<tr>
+            <td>responseTime</td>
+            <td>yyyyMMddHHmmss</td>
+         </tr>
+<tr>
+            <td>responseCode</td>
+            <td>0000 成功
+                0001 参数信息有误
+                0002 获取商户信息失败
+                0003 获取商户费率失败
+                0004 获取商户可用条数失败
+                0005 商户资金不足
+                0006 验证异常
+                0007 商户订单号重复
+            </td>
+         </tr>
+<tr>
+            <td>responseMsg</td>
+            <td>应答信息</td>
+         </tr>
+<tr>
+            <td>status</td>
+            <td>00匹配,01不匹配,02未知,03调用错误</td>
+         </tr>
+<tr>
+            <td>mhtOrderNo</td>
+            <td>同输入或SDK自动生成的订单号</td>
+         </tr>
+    </table>
+
+
+
+<h4 id='2.2'> 2.2 身份验证-订单查询</h4>
+
+          /**
+           * 身份验证-订单查询
+           * @param mhtOrderNo    商户订单号
+           * @return
+           */
+            public Map IdentityAuthQuery(String mhtOrderNo)
+
+- 返回map中的值的含义
+
+<table>
+        <tr>
+            <th>名称</th>
+            <th>说明</th>
+        </tr>
+<tr>
             <td>appId</td>
             <td>同输入</td>
          </tr>
@@ -118,18 +175,6 @@ Maven坐标如下
             <td>同输入或SDK自动生成的订单号</td>
          </tr>
     </table>
-
-
-
-<h4 id='2.2'> 2.2 身份验证-订单查询</h4>
-
-          /**
-           * 身份验证-订单查询
-           * @param mhtOrderNo    商户订单号
-           * @return
-           */
-            public Map IdentityAuthQuery(String mhtOrderNo)
-
 
 <h4 id='2.3'> 2.3 卡信息认证</h4>
 
