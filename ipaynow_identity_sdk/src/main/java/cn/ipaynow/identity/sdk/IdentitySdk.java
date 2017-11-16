@@ -24,11 +24,14 @@ public class IdentitySdk {
 
 
     private final String URL_IDENTITY =  "https://dby.ipaynow.cn/identify";
+    private final String URL_IDENTITY_PROD =  "https://s.ipaynow.cn/auth";
 
 
     private HttpsTookit httpsTookit;
 
-    public IdentitySdk(){
+    private boolean isDev;
+    public IdentitySdk(boolean isDev){
+        this.isDev = isDev;
         try {
             httpsTookit = new HttpsTookit(null,null);
         } catch (KeyStoreException e) {
@@ -44,6 +47,9 @@ public class IdentitySdk {
         } catch (UnrecoverableKeyException e) {
             e.printStackTrace();
         }
+    }
+    public IdentitySdk(){
+        this(false);
     }
 
     private Map query(Map<String,String> requestMap,String funcode){
@@ -66,7 +72,7 @@ public class IdentitySdk {
             //4. urlencoder
             message = URLEncoder.encode(message,"UTF-8");
             //5. post funcode=xxx&message=xxx
-            String res = httpsTookit.doPost(URL_IDENTITY,"funcode="+funcode+"&message="+message,null,null,"UTF-8");
+            String res = httpsTookit.doPost(isDev?URL_IDENTITY:URL_IDENTITY_PROD,"funcode="+funcode+"&message="+message,null,null,"UTF-8");
 
 //            System.out.println("SMS返回报文"+res);
 
